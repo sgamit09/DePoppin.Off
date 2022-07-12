@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #3d40b0;
+  color: #fff
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  margin: 10px auto;
+  font-size: 20px;
+  color: #fff
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #2E294E;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  font-size: 18px;
+}
+
+.form-app {
+  background-color: #525496;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  min-height: 600px;
+  width: 873px;
+  margin-top: 32px;
+  margin-left: 70px;
+  margin-bottom: 32px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-bottom: 32px;
+  border-left: inset 4px #2E294E;
+  border-bottom: inset 4px #2E294E;
+  border-top: inset 4px #2E294E;
+}
+
+.sidebar{
+  float: right;
+  border-right: inset 4px #2E294E;
+  border-bottom: inset 4px #2E294E;
+  border-top: inset 4px #2E294E;
+  height: 1304px;
+  width: 900px;
+  margin-top: 32px;
+  margin-right: 70px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  /* box-shadow: 5px 5px 5px orange; */
+  /* padding-top: 20px; */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 60px;
+  padding-top: 15px;
+  background-color: #3d40b0;
+  color: #fff;
+}
+
+.header{
+  margin: 0;
+  /* border: dotted 5px yellowgreen; */
+  background-color: #3d40b0;
+  text-align: center;
+  min-height: 100px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.results{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  /* border: solid 5px #b0763d; */
+  width: 600px;
+  font-size: 35px;
+  text-align: left;
+  color: black;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+
+.button{
+  display: inline-block;
+  width: 50%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fa405e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 90px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2{
+  display: inline-block;
+  width: 50%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fa405e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.button2:hover {background-color: #3e8e41}
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content{
+  width: 500px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-header, .modal-footer{
+  padding: 10px;
+}
+
+.modal-title{
+  margin: 0;
+}
+
+.modal-body{
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+
+h1{
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+h3{
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+img{
+  height: auto;
+  width: 100%;
+
 }
